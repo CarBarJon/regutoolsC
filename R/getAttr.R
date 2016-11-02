@@ -20,9 +20,13 @@ library("RSQLite")
 library("roxygen2")
 library("devtools")
 
+install_github('RegutoolsC','/CarBarJon/')
 
 #paths
-regulon<-dbConnect(SQLite(),dbname="/home/cbarbere/Descargas/Lab_Com/regulondb_92_sqlite3.db")
+regulon<-dbConnect(SQLite(),dbname="/home/cbarbere/Descargas/Lab_Com/RegutoolsC/R/sysdata.rda/regulondb_92_sqlite3.db")
+x<-dbConnect(SQLite(),dbname="/home/cbarbere/Descargas/Lab_Com/RegutoolsC/R/sysdata.rda/regulondb_92_sqlite3.db")
+
+devtools::use_data(x, regulon)
 
 getAttr<-function(attributes,filters = NULL, values = NULL, mart, cond= "AND"){
   ###Check if mart exist
