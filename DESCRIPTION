@@ -10,3 +10,4 @@ LazyData: TRUE
 RoxygenNote: 5.0.1
 Imports: RSQLite, roxygen2, devtools
 LazyData: true
+
