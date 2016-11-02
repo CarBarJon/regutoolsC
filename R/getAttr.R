@@ -17,10 +17,7 @@
 #' cond = AND)
 
 #paths
-regulon<-dbConnect(SQLite(),dbname="/home/cbarbere/Descargas/Lab_Com/RegutoolsC/R/sysdata.rda/regulondb_92_sqlite3.db")
-x<-dbConnect(SQLite(),dbname="/home/cbarbere/Descargas/Lab_Com/RegutoolsC/R/sysdata.rda/regulondb_92_sqlite3.db")
-
-devtools::use_data(x, regulon)
+regulon<-dbConnect(SQLite(),dbname="/home/cbarbere/Descargas/Lab_Com/RegutoolsC/R/ data/RegulonDB.db")
 
 getAttr<-function(attributes,filters = NULL, values = NULL, mart, cond= "AND"){
   ###Check if mart exist
