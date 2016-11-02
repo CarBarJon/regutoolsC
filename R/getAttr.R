@@ -16,12 +16,6 @@
 #' mart = "gene",
 #' cond = AND)
 
-library("RSQLite")
-library("roxygen2")
-library("devtools")
-
-install_github('RegutoolsC','/CarBarJon/')
-
 #paths
 regulon<-dbConnect(SQLite(),dbname="/home/cbarbere/Descargas/Lab_Com/RegutoolsC/R/sysdata.rda/regulondb_92_sqlite3.db")
 x<-dbConnect(SQLite(),dbname="/home/cbarbere/Descargas/Lab_Com/RegutoolsC/R/sysdata.rda/regulondb_92_sqlite3.db")
